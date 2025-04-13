@@ -1,54 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMSI Tutoring & Academic Support</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UMSI Tutoring & Academic Support</title>
+  <link rel="stylesheet" href="css/html5reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-    <header>
-            <a href = "">Skip to Main Content</a>
-        <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "cew+.html">CEW+</a></li>
-                <li><a href = "tutoring.html">Tutoring Site</a></li>
-                <li><a href = "basicneeds.html">Basic Needs</a></li>
-            </ul>
-        </nav>
-        <h1>UMSI Tutoring & Academic Support</h1>
+  <!-- Skip to Main -->
+  <a class="skip-to-main" href="#main">Skip to Main content</a>
 
-    </header>
-    <main>
-        <div>
-            <h2>Welcome!</h2>
-            <article>
-                <h3>The Academic Success Team at UMSI is dedicated to supporting students inside and outside of the classroom. This site is dedicated to connecting students to tutoring and academic support resources. Resources covered on this site include:</h3>
-                <ul>
-                    <li>UMSI Peer Tutoring</li>
-                    <li>Funding</li>
-                    <li>Additional Academic Support Resources</li>
-                    <li>Link to the Peer-to-Peer Tutor Directory</li>
-                </ul>
-            </article>
+  <!-- Header and Navigation -->
+  <header>
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <a class="navbar-logo">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" />
+      </a>
+      <button aria-label="Toggle menu" class="hamburger" id="hamburger-button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cew+.html">CEW+</a></li>
+        <li><a href="tutoring.html">Tutoring Site</a></li>
+        <li><a href="basicneeds.html">Basic Needs</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Nav -->
+    <nav class="desktop-nav">
+      <ul>
+        <li><a class="navbar-logo"><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" /></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cew+.html">CEW+</a></li>
+        <li><a href="tutoring.html">Tutoring Site</a></li>
+        <li><a href="basicneeds.html">Basic Needs</a></li>
+      </ul>
+    </nav>
+
+    <h1>UMSI Tutoring & Academic Support</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+    <div class="container">
+      <h2>Welcome to the Academic Support Resource Page</h2>
+      <p>The Academic Success Team at UMSI is dedicated to supporting students both inside and outside of the classroom.</p>
+      <p>Available resources include:</p>
+      <ul>
+        <li>UMSI Peer Tutoring</li>
+        <li>Funding Opportunities</li>
+        <li>Additional Academic Support Services</li>
+        <li>Peer-to-Peer Tutor Directory</li>
+      </ul>
+    </div>
+
+    <section class="programming-banner">
+        <h2>UMSI Programming Peer Tutoring</h2>
+        <p><strong>UMSI Programming Peer Tutoring Information Available for the below courses:</strong></p>
+        <ul>
+          <li>SI 106 Programs, Information, and People</li>
+          <li>SI 206 Data-Oriented Programming</li>
+          <li>SI 506 Programming I</li>
+          <li>SI 507 Intermediate Programming</li>
+          <li>General Python support</li>
+        </ul>
+        <p>
+          If you have questions regarding the Programming Peer Tutoring, you can email Professor Anthony Whyte at
+          <a href="mailto:arwhyte@umich.edu">arwhyte@umich.edu</a> for support.
+        </p>
+      </section>
+
+    <section>
+      <h2>Book Appointments with Our Programming Peer Tutors</h2>
+
+      <div class="health-grid">
+        <div class="health-card">
+          <h3>Tamariah Davis</h3>
+          <p>Hi there! I'm Tamariah, and it's great to meet you! I'm currently an AMDP student in the MSI, focusing on Big Data Analytics. I recently graduated with a BSI in Information Analysis. If you're a visual learner or want to explore new ways of understanding your coursework, I'm here to help as your peer tutor.</p>
+          <p><strong>Courses:</strong> SI 106, SI 206</p>
+          <p><a class="cta-button" href="https://calendar.app.google/eGVWb4sfRMSQVj1a6" target="_blank">Book an appointment</a></p>
         </div>
 
-        <div>
-            <h2>UMSI Peer Tutoring Program</h2>
-            <article>
-                <h3>In partnership with our UMSI faculty, the UMSI Peer Tutoring program is an opportunity for UMSI students and students taking UMSI courses to engage with peer tutors and receive assistance and support in UMSI courses.</h3>
-                <h3>For more information regarding student support and tutoring, please email umsi.academicsuccess@umich.edu.</h3>
-            </article>
+        <div class="health-card">
+          <h3>Prem Ganesan</h3>
+          <p>I’m a second-year master’s student in health informatics with 5 years of Python experience, covering data analysis, ML, and AI. I aim to make our sessions interactive and fun—just like a great match on the soccer field!</p>
+          <p><strong>Courses:</strong> SI 106, SI 206, SI 506, SI 507, General Programming</p>
+          <p><a class="cta-button" href="https://calendar.app.google/fYfmYWj2vVBj3tJy9" target="_blank">Book an appointment</a></p>
         </div>
 
-    </main>
-    <footer>
-        <p>UMSI Academic Success
-            Email: umsi.academicsuccess@umich.edu
-            Website:<a href="https://www.si.umich.edu/student-experience/academic-success">Academic Success</a></p>
-        </footer>
+        <div class="health-card">
+          <h3>Akash Dewan</h3>
+          <p>I'm a senior in the BSI program with a strong background in Python and SQL. I’m passionate about data analytics in media and entertainment, and I’m happy to chat about art, balance, and existential topics too!</p>
+          <p><strong>Courses:</strong> SI 106, SI 206/506, SI 305, SI 330</p>
+          <p><a class="cta-button" href="https://calendar.app.google/eb9Cb3Vbfdeu9j1z6" target="_blank">Book an appointment</a></p>
+        </div>
 
+        <div class="health-card">
+          <h3>Ayush Shah</h3>
+          <p>I’m pursuing the Big Data Track and love applying data analytics to sports. With prior tutoring experience and a passion for F1, soccer, and now American football, I’d love to support your journey in data visualization and analysis.</p>
+          <p><strong>Courses:</strong> SI 330, SI 305, SI 370</p>
+          <p><a class="cta-button" href="https://calendar.app.google/bXy8PEBQabVBVMZo9" target="_blank">Book an appointment</a></p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      UMSI Academic Success<br />
+      Email: <a href="mailto:umsi.academicsuccess@umich.edu">umsi.academicsuccess@umich.edu</a><br />
+      Website: <a href="https://www.si.umich.edu/student-experience/academic-success" target="_blank">Academic Success</a>
+    </p>
+  </footer>
+
+  <script src="js/mobile-nav.js"></script>
 </body>
-
 </html>

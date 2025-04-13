@@ -1,75 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Life: Basic Needs website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Needs | Student Success Portal</title>
+  <link rel="stylesheet" href="css/html5reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-            <a href = "">Skip to Main Content</a>
-        <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "cew+.html">CEW+</a></li>
-                <li><a href = "tutoring.html">Tutoring Site</a></li>
-                <li><a href = "basicneeds.html">Basic Needs</a></li>
-            </ul>
-        </nav>
-        <h1>Basic Needs</h1>
-        <p>Striving for fair and equitable access to food and other basic resources</p>
+  <header>
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+      <a class="navbar-logo">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" />
+      </a>
+      <button class="hamburger" id="hamburger-button" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
 
-    </header>
-    <main>
-        <div>
-            <h2>Resources By Category</h2>
-            <article>
-                <h3>Critical Incident Support & Conflict Management</h3>
-                <figure>
-                    <img src="images/criticalincident.jpg" alt="Support for students who are experiencing or have been impacted by a conflict or critical incident">
-                </figure>
-                <p>Support for students who are experiencing or have been impacted by a conflict or critical incident.</p>
-            </article>
-            <article>
-                <h3>Finance</h3>
-                <figure>
-                    <img src="images/finance.jpg" alt="dollar bills">
-                </figure>
-                <p>Students may find it difficult to make ends meet, especially with the demands of classes, papers and exams. But you do not have to do it alone. If you are facing financial issues or concerns, these resources are available to assist.
-                </p>
-            </article>
-            <article>
-                <h3>Food</h3>
-                <figure>
-                    <img src="images/food.jpg" alt="cooking food">
-                </figure>
-                <p>Students should go to class hungry for knowledge, not for food. If you can not afford balanced meals or sacrifice food to pay for bills, know that you do not have to choose. Turn to these resources for help.
-                </p>
-            </article>
-            <article>
-                <h3>Health Care</h3>
-                <figure>
-                    <img src="images/healthcare-1.jpg" alt="Stethoscopes">
-                </figure>
-                <p>An important part of being away at college is remembering to take care of yourself. From scheduling an annual checkup to seeking emergency care, you have options for making your health a priority.</p>
-            </article>
-            <article>
-                <h3>Housing & Transportation</h3>
-                <figure>
-                    <img src="images/housingtransportation.jpg" alt="UMSI central campus students traveling">
-                </figure>
-                <p>Students have a lot to consider when heading off to college. Where will I live? How will I get to class? Is there a bus to the grocery store? Use these resources to find answers for all of your questions and needs.
-                </p>
-                </article>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cew+.html">CEW+</a></li>
+        <li><a href="tutoring.html">Tutoring Site</a></li>
+        <li><a href="basicneeds.html">Basic Needs</a></li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Nav -->
+    <nav class="desktop-nav">
+      <ul>
+        <li><a class="navbar-logo"><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" /></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cew+.html">CEW+</a></li>
+        <li><a href="tutoring.html">Tutoring Site</a></li>
+        <li><a href="basicneeds.html">Basic Needs</a></li>
+      </ul>
+    </nav>
+
+    <a class="skip-to-main" href="#main">Skip to Main content</a>
+    <h1>Basic Needs</h1>
+    <section>
+        <div class="container">
+            <h2>Welcome to Every Student's Essential Needs</h2>
+            <p>Striving for fair and equitable access to food and other basic resources</p>
         </div>
+  </header>
 
+  <main id="main">
+    <section class="content-area row">
+      <div class="col-md-6">
+        <header class="page-header">
+          <h2 class="page-title">Critical Incident Support & Conflict Management</h2>
+        </header>
+        <p>Everyone deserves to be in an environment where they feel safe and respected. When a conflict or critical incident impacts your education and wellbeing, it shouldn’t go unresolved. Turn to these resources for help finding support.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/criticalincident.jpg" alt="Support for students facing conflicts or critical incidents">
+      </div>
+    </section>
 
-    </main>
-    <footer>
-        <p>University Housing is a unit of Student Life, and an equal opportunity educator and employer.</p>
-        <p>Copyright &copy; 2025 The Regents of the University of Michigan</p>
-        </footer>
+    <section class="content-area row">
+      <div class="col-md-6">
+        <header class="page-header">
+          <h2 class="page-title">Finance</h2>
+        </header>
+        <p>Managing finances while in school can be challenging. If you're facing financial concerns, these resources can help you navigate budgeting, emergency funding, and financial aid.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/finance.jpg" alt="Dollar bills representing financial support">
+      </div>
+    </section>
 
+    <section class="content-area row">
+      <div class="col-md-6">
+        <header class="page-header">
+          <h2 class="page-title">Food</h2>
+        </header>
+        <p>Students should be hungry for knowledge, not food. If you're struggling to afford meals, these resources are here to help ensure you have access to nutritious food options.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/food.jpg" alt="Cooking food representing access to meals">
+      </div>
+    </section>
+
+    <section class="content-area row">
+      <div class="col-md-6">
+        <header class="page-header">
+          <h2 class="page-title">Health Care</h2>
+        </header>
+        <p>Your health matters. Whether it's routine checkups or urgent care, these resources help you prioritize your well-being while in school.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/healthcare-1.jpg" alt="Stethoscope representing healthcare support">
+      </div>
+    </section>
+
+    <section class="content-area row">
+      <div class="col-md-6">
+        <header class="page-header">
+          <h2 class="page-title">Housing & Transportation</h2>
+        </header>
+        <p>Finding a place to live and a way to get around is essential. These resources provide guidance on housing options and transportation solutions to help make campus life more accessible.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/housingtransportation.jpg" alt="Students commuting on UMSI central campus">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="footer-year">2025</span> UMSI Student Resources</p>
+    <p>Contact: <a href="mailto:success@umich.edu">success@umich.edu</a></p>
+    <p><a href="https://www.si.umich.edu">Visit UMSI Website</a></p>
+  </footer>
+
+  <script src="js/footer-year.js"></script>
+  <script src="js/mobile-nav.js"></script>
 </body>
-
 </html>
+
+
+
+

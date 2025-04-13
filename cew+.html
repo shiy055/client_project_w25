@@ -1,121 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Center for the Education of Women +</title>
-</head>
-<body>
 
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Center for the Education of Women +
+    </title>
+    <link href="css/html5reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
     <header>
-            <a href = "">Skip to Main Content</a>
-        <nav>
+        <!-- Mobile Header -->
+        <div class="mobile-header">
+            <a class="skip-to-main" href="#main">
+                Skip to Main content
+            </a>
+            <a class="navbar-logo">
+                <img alt="UMSI Logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" />
+            </a>
+            <button aria-label="Toggle menu" class="hamburger" id="hamburger-button">
+                <span>
+                </span>
+                <span>
+                </span>
+                <span>
+                </span>
+            </button>
+        </div>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav" id="mobile-nav">
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "cew+.html">CEW+</a></li>
-                <li><a href = "tutoring.html">Tutoring Site</a></li>
-                <li><a href = "basicneeds.html">Basic Needs</a></li>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="cew+.html">
+                        CEW+
+                    </a>
+                </li>
+                <li>
+                    <a href="tutoring.html">
+                        Tutoring Site
+                    </a>
+                </li>
+                <li>
+                    <a href="basicneeds.html">
+                        Basic Needs
+                    </a>
+                </li>
             </ul>
         </nav>
-        <h1>Center for the Education of Women +</h1>
-
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav">
+            <ul>
+                <li>
+                    <a class="navbar-logo">
+                        <img alt="UMSI Logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="cew+.html">
+                        CEW+
+                    </a>
+                </li>
+                <li>
+                    <a href="tutoring.html">
+                        Tutoring Site
+                    </a>
+                </li>
+                <li>
+                    <a href="basicneeds.html">
+                        Basic Needs
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1>
+            Center for the Education of Women +
+        </h1>
     </header>
-    <main>
-        <div>
-            <p>At CEW+, we navigate circumstantial barriers by providing academic, financial, and professional support to help you reach your personal potential. Established to support women through higher education, we lift up women and all underserved communities at U-M and beyond. Through career and education counseling, funding, workshops, events, and a diverse, welcoming community, we exist to empower. We are CEW+, and we’re here to help you reach your potential.</p>
+
+    <main id="main">
+        <div class="container">
+            <h2>
+                Welcome to CEW+ Resources
+            </h2>
+            <p>
+                Support for U-M students navigating academics, finances, careers, and advocacy.
+            </p>
+            <p>
+                CEW+ helps students overcome circumstantial barriers through education counseling,
+                financial aid, workshops, and a strong community committed to equity and empowerment.
+            </p>
             <ol>
-                <li>Events & Workshops</li>
-                <li>Funding</li>
-                <li>Counseling</li>
-                <li>Advocacy Initiatives</li>
+                <li>
+                    Events &amp; Workshops
+                </li>
+                <li>
+                    Funding
+                </li>
+                <li>
+                    Counseling
+                </li>
+                <li>
+                    Advocacy Initiatives
+                </li>
             </ol>
         </div>
+        <section class="event-section">
+            <h2>
+                Events &amp; Workshops
+            </h2>
+            <div class="event-grid">
+                <div class="event-card">
+                    <img alt="Financial Workshop" src="images/Event_Image.png" />
+                    <div class="event-info">
+                        <h3>
+                            FINANCIAL EMPOWERMENT SERIES: #3 Ultimate Financial Wellness | Jan 28, 2025
+                        </h3>
+                    </div>
+                    <div class="event-meta">
+                        <p>
+                            <strong>
+                                January 28, 2025
+                            </strong>
+                            <br />
+                            5:00 pm - 7:00 pm
+                            <br />
+                            CEW+, 330 E. Liberty Street, Ann Arbor, MI
+                        </p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img alt="Mindfulness meditation in the winter" src="images/Event_Image2.png" />
+                    <div class="event-info">
+                        <h3>
+                            VIRTUAL | CEW+Inspire Midweek Mindfulness Guided Sit, Jan 29, 2025
+                        </h3>
+                    </div>
+                    <div class="event-meta">
+                        <p>
+                            <strong>
+                                January 29, 2025
+                            </strong>
+                            <br />
+                            12:15 pm - 12:45 pm
+                            <br />
+                            Virtual
+                        </p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img alt="Mindfulness meditation in the winter" src="images/Event_Image2.png" />
+                    <div class="event-info">
+                        <h3>
+                            VIRTUAL | CEW+Inspire Midweek Mindfulness Guided Sit, April 30, 2025
+                        </h3>
+                    </div>
+                    <div class="event-meta">
+                        <p>
+                            <strong>
+                                April 30, 2025
+                            </strong>
+                            <br />
+                            12:15 pm - 12:45 pm
+                            <br />
+                            Virtual
+                        </p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img alt="Mindfulness meditation in the winter" src="images/Event_Image2.png" />
+                    <div class="event-info">
+                        <h3>
+                            CEW+ Spring Study Day, Snacks, and Crafts!
+                        </h3>
+                    </div>
+                    <div class="event-meta">
+                        <p>
+                            <strong>
+                                April 23, 2025
+                            </strong>
+                            <br />
+                            1:00 pm - 4:00 pm
+                            <br />
+                            Northwood Community Center, 1000 McIntyre Drive, Ann Arbor, MI
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="funding-section">
+            <h2>
+                Funding
+            </h2>
+            <p>
+                At CEW+, we work to break down barriers and increase access through funding. We offer scholarships,
+                emergency grants, sponsorships, fellowships, and more to support U-M students, staff, faculty, and the
+                surrounding community.
+            </p>
+            <div class="funding-slider-wrapper">
+                <button class="slider-arrow left" onclick="moveSlide(-1)">
+                    ❮
+                </button>
+                <div class="funding-slider" id="fundingSlider">
+                    <div class="funding-card" style="text-align: center; padding: 2rem;">
+                        <h3>
+                            Scholarships for U-M Students
+                        </h3>
+                        <div class="funding-info">
+                            <p>
+                                <strong>
+                                    FOR:
+                                </strong>
+                            </p>
+                            <ul style="display: inline-block; text-align: left; margin: 0 auto;">
+                                <li>
+                                    Childcare
+                                </li>
+                                <li>
+                                    Living Expenses
+                                </li>
+                                <li>
+                                    Research
+                                </li>
+                                <li>
+                                    Travel
+                                </li>
+                                <li>
+                                    Tuition
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="funding-card" style="text-align: center; padding: 2rem;">
+                        <h3>
+                            CEW+ Fellowships
+                        </h3>
+                        <div class="funding-info">
+                            <p>
+                                <strong>
+                                    FOR:
+                                </strong>
+                            </p>
+                            <ul style="display: inline-block; text-align: left; margin: 0 auto;">
+                                <li>
+                                    Research
+                                </li>
+                                <li>
+                                    Travel
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="funding-card" style="text-align: center; padding: 2rem;">
+                        <h3>
+                            Emergency Funding
+                        </h3>
+                        <div class="funding-info">
+                            <p>
+                                <strong>
+                                    FOR:
+                                </strong>
+                            </p>
+                            <ul style="display: inline-block; text-align: left; margin: 0 auto;">
+                                <li>
+                                    Emergencies
+                                </li>
+                                <li>
+                                    Unexpected Expenses
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="funding-card" style="text-align: center; padding: 2rem;">
+                        <h3>
+                            Graduation Grant Program
+                        </h3>
+                        <div class="funding-info">
+                            <p>
+                                <strong>
+                                    FOR:
+                                </strong>
+                            </p>
+                            <ul style="display: inline-block; text-align: left; margin: 0 auto;">
+                                <li>
+                                    Tuition
+                                </li>
+                                <li>
+                                    Unexpected Expenses
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-arrow right" onclick="moveSlide(1)">
+                    ❯
+                </button>
+            </div>
+        </section>
 
-        <div>
-            <h2>Events & Workshops</h2>
-            <article>
-                <h3>FINANCIAL EMPOWERMENT SERIES: #3 Ultimate Financial Wellness | January 28, 2025</h3>
-                <figure>
-                    <img src="images/Event_Image.png" alt="Financial Workshop">
-                    <figcaption>Financial Workshop Flyer</figcaption>
-                </figure>
-                <p>January 28, 2025
-                    5:00 pm - 7:00 pm
-                    CEW+, 330 E. Liberty Street, Ann Arbor, MI</p>
-            </article>
-            <article>
-                <h3>VIRTUAL | CEW+Inspire Midweek Mindfulness Guided Sit, January 29, 2025</h3>
-                <figure>
-                    <img src="images/Event_Image2.png" alt="Mindfulness meditation in the winter">
-                    <figcaption>Mindfulness Meditation</figcaption>
-                </figure>
-                <p>January 29, 2025
-                    12:15 pm - 12:45 pm
-                    Virtual</p>
-                </article>
-        </div>
-        <div>
-            <h2>Funding</h2>
-            <p>At CEW+, we work to break down barriers and increase access through funding. For U-M students, staff, faculty, and surrounding community, we offer opportunities for scholarships, emergency grants, sponsorships, fellowships, and more for a range of situations and life circumstances.</p>
-            <article>
-                <h3>Scholarships for U-M Students</h3>
-                <p>FOR:
-                    Childcare
-                    Living Expenses
-                    Research
-                    Travel
-                    Tuition</p>
-            </article>
-            <article>
-                <h3>CEW+ Fellowships</h3>
-                <p>FOR:
-                    Research
-                    Travel</p>
-            </article>
-            <article>
-                <h3>Emergency Funding</h3>
-                <p>FOR:
-                    Emergencies
-                    Unexpected Expenses</p>
-            </article>
-            <article>
-                <h3>Graduation Grant Program</h3>
-                <p>FOR:
-                    Tuition
-                    Unexpected Expenses</p>
-            </article>
-        </div>
-        <div>
+        <section class="counseling-section">
             <h2>Career & Education Counseling</h2>
-            <article>
-                <h3>Schedule an Appointment</h3>
-                <p>We offer career, education, and emergency funding counseling appointments in person, over the phone, or via Zoom. In-person counseling appointments are available on Wednesdays, Thursdays, and Fridays. Zoom and phone appointments are available Monday through Friday.</p>
-                <p>There are three ways to schedule an appointment.</p>
-                <ol>
-                    <li>Fill out <a href="https://app.smartsheet.com/b/form/86e196d96467432f8baa8aaaa63f22da">this online form</a>. A member of our team will be in touch (via phone or email – your choice) to formally schedule your appointment within 24 hours of the next business day once the form is submitted and reviewed.</li>
-                    <li>Call 734-764-6360 between 8:30 am and 4:30 pm Monday-Friday. If you get voicemail, please leave a message and we will return your voicemail as quickly as possible. </li>
-                    <li>Email us at cew.appts@umich.edu. Please be advised that depending on response rates to emails, you may not get the first available appointment offered.</li>
-                </ol>
-            </article>
-        </div>
-        <div>
-            <h2>Advocacy Initiatives</h2>
-            <p>Through a variety of initiatives, groups, and lecture series, we lift up and make space for diverse voices.</p>
+            <p>We offer career, education, and emergency funding counseling appointments in person, over the phone, or
+                via Zoom.</p>
+            <p>In-person counseling appointments are available Wednesdays–Fridays. Zoom and phone appointments are
+                available Monday–Friday.</p>
             <ul>
-                <li><strong>Financial Empowerment Initiative</strong> FEI delves into the underlying psychological, social, and intergenerational roots that underlie individual financial choices. By filling these gaps, participants become equipped with the self-knowledge and tools to be empowered to take charge of their financial well-being.</li>
-                <li><strong>Student Caregivers</strong> Resources for U-M students with caregiver responsibilities.</li>
-                <li><strong>Supporting the Academic Excellence of Student Caregivers</strong> Student caregivers are some of the most focused and resourceful students on campus, as demonstrated by their ability to balance school, work, and parental responsibilities. Did you know that 26% of all college students nationwide are raising children?</li>
-                <li><strong>CEW+ Annual Advocacy Symposium</strong> CEW+ annually brings together staff, faculty, students, and community members to create change through introspection, dialogue, and action at our advocacy symposium. The goal is to give participants practical tools to better advocate for themselves and others.</li>
-                <li><strong>CEW+ Scholar Community</strong> The CEW+ Scholar Community consists of current and past CEW+ scholarship recipients, and exists to support, inspire, & unleash the collective power of participating Scholars and Fellows to make a positive impact in their lives, in their communities, and in the world.</li>
+                <li><strong>Fill out:</strong> <a
+                        href="https://app.smartsheet.com/b/form/86e196d96467432f8baa8aaaa63f22da">this online form</a>.
+                </li>
+                <li><strong>Call:</strong> 734-764-6360 (M–F, 8:30 AM – 4:30 PM)</li>
+                <li><strong>Email:</strong> <a href="mailto:cew.appts@umich.edu">cew.appts@umich.edu</a></li>
             </ul>
-        </div>
+        </section>
 
+        <section class="advocacy-section">
+            <h2>
+                Advocacy Initiatives
+            </h2>
+            <p>
+                Through a variety of initiatives, groups, and lecture series, we lift up and make space for diverse
+                voices.
+            </p>
+            <ul>
+                <li>
+                    <strong>
+                        Financial Empowerment Initiative:
+                    </strong>
+                    Equips participants with the knowledge and tools to take charge of their financial well-being.
+                </li>
+                <li>
+                    <strong>
+                        Student Caregivers:
+                    </strong>
+                    Resources for U-M students with caregiver responsibilities.
+                </li>
+                <li>
+                    <strong>
+                        Supporting the Academic Excellence of Student Caregivers:
+                    </strong>
+                    Highlights the strengths of students balancing school, work, and parenting.
+                </li>
+                <li>
+                    <strong>
+                        CEW+ Annual Advocacy Symposium:
+                    </strong>
+                    Brings together community members to drive change through dialogue and action.
+                </li>
+                <li>
+                    <strong>
+                        CEW+ Scholar Community:
+                    </strong>
+                    A network of CEW+ scholarship recipients creating impact locally and globally.
+                </li>
+            </ul>
+        </section>
     </main>
     <footer>
-        <p>CEW+ (Center for the Education of Women+) at the University of Michigan
-            330 E. Liberty Street, Ann Arbor, MI 48104 <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">(734) 764-6360 </a></p>
-        </footer>
-
+        <p>
+            ©
+            <span id="footer-year">
+                2025
+            </span>
+            UMSI Student Resources
+        </p>
+        <p>
+            Contact:
+            <a href="mailto:success@umich.edu">
+                success@umich.edu
+            </a>
+        </p>
+        <p>
+            <a href="https://www.si.umich.edu">
+                Visit UMSI Website
+            </a>
+        </p>
+    </footer>
+    <script src="js/footer-year.js">
+    </script>
+    <script src="js/mobile-nav.js">
+    </script>
+    <script src="js/slide-show.js">
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,650 @@
+/* w3 school box sizing reference */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #00274C;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* Skip to Main Content  */
+.skip-to-main {
+    position: absolute;
+    top: -40px;
+    left: -10000px;
+    background-color: #003366;
+    color: #ffffff;
+    outline: 3px solid #FFCB05;
+}
+
+.skip-to-main:focus {
+    top: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+/* Headings & Text */
+h1 {
+    font-size: 2rem;
+    color: #00274C;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #00274C;
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+nav ul li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul a {
+    display: block;
+    padding: 0.75rem;
+    color: #FFCB05;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: underline;
+}
+
+/* My Logo in Navbar */
+.navbar-logo img {
+    display: block;
+    max-width: 3rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Content Layout */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/*  Sections Content Layout  */
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+/* OL ul Content Layour */
+ol,
+ul {
+    margin-left: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #00274C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #FFCB05;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Small devices (portrait tablets and large phones, 800px and up) */
+@media only screen and (min-width: 800px) {
+    body {
+        font-size: 1.2rem;
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .navbar-logo img {
+        max-width: 4rem;
+    }
+
+    section {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .content-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .col-md-6 {
+        width: 48%;
+        padding: 1rem;
+    }
+
+    .col-md-6 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .health-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .content-area {
+        flex-wrap: nowrap;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+    
+}
+
+/* Content Card Styling for Health Sections */
+.health-card {
+    background: #f9f9f9;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.health-card h2 {
+    color: #00274C;
+    border-bottom: 2px solid #FFCB05;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.health-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 0.5rem;
+}
+
+.health-card figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+@media screen and (min-width: 1500px) {
+    section {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1400px;
+    }
+}
+
+/* Hide desktop nav by default */
+.desktop-nav {
+    display: none;
+}
+
+/* Mobile header layout */
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00274C;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background-color: #00274C;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+}
+
+.hamburger span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #FFCB05;
+    border-radius: 2px;
+}
+
+/* Mobile nav dropdown */
+.mobile-nav {
+    display: none;
+    background-color: #FFCB05;
+    margin-bottom: 1rem;
+}
+
+.mobile-nav.open {
+    display: block;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-nav li {
+    border-bottom: 1px solid #333;
+}
+
+.mobile-nav li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #00274C;
+    font-weight: bold;
+}
+
+.mobile-nav li a:hover {
+    background-color: #00274C;
+    color: #fff;
+}
+
+/* Desktop nav shown at 800px+ */
+@media only screen and (min-width: 800px) {
+
+    .mobile-header,
+    .mobile-nav {
+        display: none !important;
+    }
+
+    .desktop-nav {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .desktop-nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        list-style: none;
+        background-color: #00274C;
+    }
+
+    .desktop-nav li a {
+        color: #FFCB05;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .desktop-nav li a:hover {
+        text-decoration: underline;
+    }
+
+    .funding-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .funding-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .health-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.event-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #00274C;
+    text-transform: uppercase;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.event-card {
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.event-info {
+    background-color: #295c99;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.event-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+}
+
+.event-meta {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #00274C;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .event-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .funding-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.event-grid {
+    justify-items: center;
+    align-items: stretch;
+}
+
+/* CEW+ Funding Card Styling */
+.funding-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #00274C;
+    text-transform: uppercase;
+}
+
+.funding-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.funding-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.funding-card {
+    background: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.funding-card h3 {
+    font-size: 1.25rem;
+    color: #8b2c18;
+    margin-bottom: 1rem;
+}
+
+.funding-tags {
+    margin-bottom: 1rem;
+}
+
+.funding-tags .tag {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+.funding-info p {
+    font-weight: bold;
+    color: #00274C;
+    margin-bottom: 0.5rem;
+}
+
+.funding-info ul {
+    list-style: none;
+    padding-left: 0;
+    column-count: 2;
+    column-gap: 2rem;
+    margin: 0;
+}
+
+.funding-info li {
+    font-size: 1rem;
+    color: #00274C;
+    margin-bottom: 0.5rem;
+}
+
+/* W3 slide show: https://www.w3schools.com/w3css/w3css_slideshow.asp */
+.funding-slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.funding-slider {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+}
+
+.funding-card {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #FFCB05;
+    border: none;
+    font-size: 2rem;
+    color: #00274C;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.slider-arrow.left {
+    left: 0;
+}
+
+.slider-arrow.right {
+    right: 0;
+}
+
+/* 404 Page Styling */
+.page-not-found {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.page-not-found h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #003865;
+}
+
+.page-not-found p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #003865;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #002244;
+}
+
+/* Programming Support Banner */
+.programming-banner {
+    background-color: #00274C;
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.programming-banner h2 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.programming-banner p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.programming-banner ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.programming-banner a {
+    color: #FFCB05;
+    text-decoration: underline;
+}
+
+/* Book an appintment button */
+.cta-button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #FFCB05;
+    color: #00274C;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.cta-button:hover {
+    background-color: #e6b800;
+    text-decoration: none;
+}
+
+
+
+.health-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+    .health-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

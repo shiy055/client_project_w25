@@ -1,101 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Success Portal</title>
-</head>
-<body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Student Success Portal
+  </title>
+  <link href="css/html5reset.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
 
-    <header>
-  <a href = "">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "cew+.html">CEW+</a></li>
-                <li><a href = "tutoring.html">Tutoring Site</a></li>
-                <li><a href = "basicneeds.html">Basic Needs</a></li>
-            </ul>
-        </nav>
-        <h1>Student Success Portal</h1>
+ <body>
+  <header>
+   <!-- Mobile Header -->
+   <div class="mobile-header">
+    <a class="navbar-logo">
+     <img alt="UMSI Logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg"/>
+    </a>
+    <button aria-label="Toggle menu" class="hamburger" id="hamburger-button">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+    </button>
+   </div>
+   <!-- Mobile Nav -->
+   <nav class="mobile-nav" id="mobile-nav">
+    <ul>
+     <li>
+      <a href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="cew+.html">
+       CEW+
+      </a>
+     </li>
+     <li>
+      <a href="tutoring.html">
+       Tutoring Site
+      </a>
+     </li>
+     <li>
+      <a href="basicneeds.html">
+       Basic Needs
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <!-- Desktop Nav -->
+   <nav class="desktop-nav">
+    <ul>
+     <li>
+      <a class="navbar-logo">
+       <img alt="UMSI Logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg"/>
+      </a>
+     </li>
+     <li>
+      <a href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="cew+.html">
+       CEW+
+      </a>
+     </li>
+     <li>
+      <a href="tutoring.html">
+       Tutoring Site
+      </a>
+     </li>
+     <li>
+      <a href="basicneeds.html">
+       Basic Needs
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <a class="skip-to-main" href="#main">
+    Skip to Main content
+   </a>
+   <h1>
+    Student Success Portal
+   </h1>
+  </header>
+  <main id="main">
+   <section>
+    <div class="container">
+     <h2>
+      Welcome to the UM Grad Success Navigator
+     </h2>
+     <p>
+      Your Comprehensive Guide to Resources for Graduate School Success
+     </p>
+     <p>
+      This guide is set up to help you be successul inside and outside of the classroom and we
+      have included the following resources throughout our site:
+     </p>
+     <ol>
+      <li>
+       Academic Resources
+      </li>
+      <li>
+       Physical Health
+      </li>
+      <li>
+       Mental Health
+      </li>
+      <li>
+       Life Outside Classroom
+      </li>
+      <li>
+       Contact
+      </li>
+     </ol>
+    </div>
+   </section>
+   <section class="health-grid">
+    <div class="health-card">
+     <h2>
+      Physical Health
+     </h2>
+     <p>
+      Taking care of your physical health helps you perform better academically and feel more
+      confident in your day-to-day. The University of Michigan offers a range of resources to
+      help you stay physically healthy and well:
+     </p>
+     <ul>
+      <li>
+       <strong>
+        University Health Service (UHS):
+       </strong>
+       Offers comprehensive medical care such as check-ups, immunizations, illness
+      treatment, and referrals.
+      </li>
+      <li>
+       <strong>
+        Recreational Sports:
+       </strong>
+       Access to gyms, fitness classes, intramural sports, and wellness workshops to stay
+        active and energized.
+      </li>
+     </ul>
+    </div>
 
-    </header>
-    <main>
-        <section>
-            <h2>Welcome to the UM Grad Success Navigator</h2>
-            <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
-            <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
-            <ol>
-                <li>Academic Resources</li>
-                <li>Physical Health</li>
-                <li>Mental Health</li>
-                <li>Life Outside Classroom</li>
-                <li>Contact</li>
-            </ol>
-        </section>
-        <section>
-            <h2>Physical Health</h2>
-            <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
-            <article>
-                <h3>University Health Service (UHS)</h3>
-                <figure>
-                    <img src="images/UHS.jpg" alt="University Health Services building">
-                    <figcaption>University Health Services Building</figcaption>
-                </figure>
-                <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
-            </article>
-            <article>
-                <h3>Recreational Sports</h3>
-                <figure>
-                    <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
-                    <figcaption>UMSI out in the fall!</figcaption>
-                </figure>
-                <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
-            </article>
-        </section>
+    <div class="health-card">
+     <h2>
+      University Health Service (UHS)
+     </h2>
+     <figure>
+      <img alt="University Health Services building" src="images/UHS.jpg"/>
+      <figcaption>
+       University Health Services Building
+      </figcaption>
+     </figure>
+     <p>
+      <strong>
+       UHS:
+      </strong>
+      Comprehensive care from primary care to women's health and mental health support. All
+                              students on the Ann Arbor campus can access many services at no charge.
+     </p>
+    </div>
 
-        <section>
-            <h2>Mental Health</h2>
-            <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
-            <article>
-                <h3>Counseling and Psychological Services (CAPS):</h3>
-                <p> Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
-            </article>
-            <article>
-                <h3>Wellness Coaching:</h3>
+    <div class="health-card">
+     <h2>
+      Mental Health
+     </h2>
+     <p>
+      Whether you're feeling overwhelmed or just need someone to talk to, mental health services
+                              on campus are designed to support you:
+     </p>
+     <ul>
+      <li>
+       <strong>
+        CAPS:
+       </strong>
+       Confidential services like individual and group counseling, crisis intervention, and
+                                    wellness workshops.
+      </li>
+      <li>
+       <strong>
+        Wellness Coaching:
+       </strong>
+       Collaborate with coaches to set goals and strategies to support your emotional
+                                    wellbeing.
+      </li>
+      <li>
+       <strong>
+        Mindfulness Resources:
+       </strong>
+       Attend drop-in guided meditations and learn stress-relief techniques you can use
+                                    every day.
+      </li>
+      <li>
+       <strong>
+        Support Groups:
+       </strong>
+       Connect with peers through identity-based or concern-based support groups.
+      </li>
+     </ul>
+    </div>
+    <div class="health-card" style="background:#f9f9f9; border-radius: 0.5rem; padding: 1rem;">
+     <h2 style="color: #00274C; border-bottom: 2px solid #FFCB05; padding-bottom: 0.5rem;">
+      Wellness Resources at a Glance
+     </h2>
+     <img alt="A student wears a UMSI backpack in fall on the drag." src="images/UMSI_CampusFall_UMSIBackpack_02.jpg"/>
+     <figcaption style="text-align:center; font-size: 0.9rem;">
+      Join guided meditation sessions or group check-ins through Wolverine Wellness.
+     </figcaption>
+    </div>
+   </section>
 
-                <p>Work with a wellness coach to develop strategies for managing stress, time, and overall well-being.</p>
-            </article>
-            <article>
-                <h3>Mindfulness Resources:</h3>
-
-                <p> Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.</p>
-            </article>
-            <article>
-                <h3>Support Groups:</h3>
-
-                <p> Join peer support groups for shared experiences and collective coping strategies.</p>
-            </article>
-        </section>
-
-
-        <section id="life-outside-classroom">
-            <h2>Life Outside the Classroom</h2>
-            <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
-            <ul>
-                <li><strong>Student Organizations:</strong> Join one of the many student organizations to connect with peers who share your interests and passions.</li>
-                <li><strong>Arts and Culture:</strong> Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</li>
-                <li><strong>Career Services:</strong> Utilize career counseling, job search resources, and networking opportunities to prepare for your professional future.</li>
-                <li><strong>Community Engagement:</strong> Get involved with local volunteering opportunities and community service projects to make a positive impact.</li>
-                <li><strong>Housing and Dining:</strong> Find information on on-campus housing options and dining services to ensure a comfortable living experience.</li>
-            </ul>
-        </section>
-        <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
+   <section id="life-outside-classroom">
+    <h2>
+     Life Outside the Classroom
+    </h2>
+    <p>
+     Graduate school is more than just academics. It's important to cultivate a balanced life. Here
+     are some resources to help you enjoy life outside the classroom:
+    </p>
+    <ul>
+     <li>
+      <strong>
+       Student Organizations:
+      </strong>
+      Join one of the many student organizations to connect with peers who share your interests
+                              and passions.
+     </li>
+     <li>
+      <strong>
+       Arts and Culture:
+      </strong>
+      Explore UM's vibrant arts scene with events, exhibitions, and performances happening
+                              year-round.
+     </li>
+     <li>
+      <strong>
+       Career Services:
+      </strong>
+      Utilize career counseling, job search resources, and networking opportunities to prepare
+                              for your professional future.
+     </li>
+     <li>
+      <strong>
+       Community Engagement:
+      </strong>
+      Get involved with local volunteering opportunities and community service projects to make
+                              a positive impact.
+     </li>
+     <li>
+      <strong>
+       Housing and Dining:
+      </strong>
+      Find information on on-campus housing options and dining services to ensure a comfortable
+                              living experience.
+     </li>
+    </ul>
+   </section>
+   <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
-    </main>
-    <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
-</body>
+  </main>
+  <footer>
+   <p>
+    &copy;
+    <span id="footer-year">
+     2025
+    </span>
+    UMSI Student Resources
+   </p>
+   <p>
+    Contact:
+    <a href="mailto:success@umich.edu">
+     success@umich.edu
+    </a>
+   </p>
+   <p>
+    <a href="https://www.si.umich.edu">
+     Visit UMSI Website
+    </a>
+   </p>
+  </footer>
+  <script src="js/footer-year.js">
+  </script>
+  <script src="js/mobile-nav.js">
+  </script>
+ </body>
 </html>
